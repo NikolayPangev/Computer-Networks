@@ -1,0 +1,29 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav li,
+.main-nav a{
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end; 
+    padding: 1em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}

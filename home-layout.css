@@ -1,0 +1,11 @@
+.section-content .container{
+    border: 1px solid #000;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em;
+}
+
+h1{
+    text-align: center;
+    padding-top: 1em;
+}
