@@ -7,6 +7,18 @@ html{
     padding: 2em;
     margin: 2em;
     background-color: #ccefff;
+    text-align: justify;
+}
+.section-content .contact-container{
+    border: 1px solid #000;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em;
+    background-color: #ccefff;
+    text-align: center;
+}
+.bibliography {
+    text-align: left;
 }
 
 h1{
