@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSPF Състояния</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="section-background">
+        <div class="section-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="information.html">Информация</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section-content">
+            <h1> OSPF Състояния</h1>
+            <div class="container">
+                <p><b>Устройството, работещо с OSPF, преминава през определени състояния. Тези състояния са: </b></p>
+                <br>
+                <ul type="disc">
+                    <li>
+                        <p><b>Down</b> - В този статус не са получени "hello" пакети по интерфейса.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>INIT</b> - В този статус са получени "hello" пакети от другия маршрутизатор.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>2WAY</b> - В 2WAY статуса и двата маршрутизатора са получили "hello" пакети от други
+                            маршрутизатори. Установена е двупосочна свързаност.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Exstart</b> - В този статус се обменят NULL DBD. Тук се провеждат избори за мастър и
+                            слейв. Маршрутизаторът с по-висок идентификационен номер става мастър, докато другият става
+                            слейв. Този избор решава кой маршрутизатор ще изпрати своя DBD първи (маршрутизаторите,
+                            които са установили съседство, участват в този избор).</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Exchange</b> - В този статус се обменят реални DBD.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Loading</b> - В този статус се обменят LSR, LSU и LSA (Link State Acknowledgement).
+                            Важно – Когато маршрутизатор получи DBD от друг маршрутизатор, той сравнява своя собствена
+                            DBD с тази на другия маршрутизатор. Ако полученият DBD е по-актуален от собствения DBD,
+                            маршрутизаторът ще изпрати LSR до другия маршрутизатор, указвайки кои връзки са необходими.
+                            Другият маршрутизатор отговаря с LSU, съдържащ актуализациите, които са необходими. В
+                            отговор на това маршрутизаторът изпраща Link State Acknowledgement.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Full</b> - В този статус се извършва синхронизация на цялата информация. OSPF
+                            маршрутизацията може да започне само след Full статус.</p>
+                    </li>
+                    <br>
+                </ul>
+                <br>
+                <div class="return-link-information">
+                    <a href="information.html">Назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
