@@ -1,42 +1,64 @@
-html{
-    background-color: #ccccff;
+html {
+    background-color: #edc7b7;
 }
-.section-content .container{
+
+.section-content .container {
     border: 1px solid #000;
     border-radius: 1em;
     padding: 2em;
     margin: 2em;
-    background-color: #ccefff;
+    background-color: #eee2dc;
     text-align: justify;
 }
-.section-content .contact-container{
+
+.section-content .contact-container {
     border: 1px solid #000;
     border-radius: 1em;
     padding: 2em;
     margin: 2em;
-    background-color: #ccefff;
+    background-color: #eee2dc;
     text-align: center;
 }
+
 .bibliography {
     text-align: left;
 }
 
-h1{
+h1 {
     text-align: center;
     padding-top: 1em;
+    color: #ac3b61;
+    text-shadow: 1px 1px white;
 }
 
-.section-list{
+.section-list {
     padding-left: 3em;
     padding-bottom: 1em;
 }
 
-.return-link-information a{
+.return-link-information a {
     border: 1px solid white;
     border-radius: 1em;
     text-decoration: none;
     padding: 1em;
     margin: 1em;
     color: white;
-    background-color: black;
+    background-color: #ac3b61;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d2c7be;
 }

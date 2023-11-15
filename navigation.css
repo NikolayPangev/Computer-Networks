@@ -2,23 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #123c69;
 }
 
-.main-nav ul{
+.main-nav ul {
     display: flex;
 }
 
 .main-nav li,
-.main-nav a{
+.main-nav a {
     display: block;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; 
-    justify-content: flex-end; 
+    gap: 20px;
+    justify-content: flex-end;
     padding: 1em;
 }
 
@@ -26,16 +26,18 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    text-shadow: 1px 1px black;
 }
 
 .ospf-nav li,
-.ospf-nav a{
+.ospf-nav a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #ac3b61;
+    ;
     border-radius: 1em;
     padding: 0.2em;
 }
@@ -43,7 +45,7 @@
 .ospf-nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; 
-    justify-content: center; 
+    gap: 20px;
+    justify-content: center;
     padding: 1em;
 }
