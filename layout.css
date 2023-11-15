@@ -10,6 +10,7 @@ html {
     background-color: #eee2dc;
     text-align: justify;
 }
+
 .protocol-areas,
 .protocol-lll-areas {
     display: flex;
@@ -17,10 +18,10 @@ html {
     align-items: center;
 }
 
-.protocol-areas-info, 
+.protocol-areas-info,
 .protocol-lll-info {
     flex: 1;
-    margin-right: 20px; 
+    margin-right: 20px;
     padding: 1em;
 }
 
@@ -64,6 +65,10 @@ h1 {
     margin: 1em;
     color: white;
     background-color: #ac3b61;
+}
+
+.return-link-information a:hover {
+    background-color: #123c69;
 }
 
 table {
