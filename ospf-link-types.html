@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видове Линкове при OSPF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="section-background">
+        <div class="section-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">OSPF</a></li>
+                    <li><a href="information.html">Информация</a></li>
+                    <li><a href="advantages-disadvantages.html">Предимства и недостатъци</a></li>
+                    <li><a href="bibliography.html">Източници</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section-content">
+            <h1>Видове Линкове при OSPF</h1>
+            <div class="container">
+                <div class="protocol-areas">
+                    <div class="protocol-areas-info">
+                        <p>В OSPF съществуват четири типа връзки:</p>
+                        <br>
+                        <ol type="1">
+                            <li>
+                                <p><b>Точка-до-точка връзка(Point-to-point link)</b> - Този тип връзка директно свързва
+                                    два рутера без никакви
+                                    хости или други рутери между тях. </p>
+                                <br>
+                            </li>
+                            <li>
+                                <p><b>Транзитна връзка(Transit link)</b> - Когато няколко рутера са свързани в мрежа, тя
+                                    се нарича
+                                    транзитна връзка. Транзитната връзка има два различни варианта:
+                                </p>
+                                <br>
+                                <ul class="section-list" type="disc">
+                                    <li>
+                                        <p>Нереалистична топология: Когато всички рутери са свързани помежду си, това се
+                                            нарича нереалистична топология.</p>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <p>Реалистична топология: Когато в мрежата съществува определен рутер, този вид
+                                            се нарича реалистична топология. Тук определеният рутер е такъв, към който
+                                            всички останали рутери са свързани, и всички пакети, изпратени от рутерите,
+                                            преминават през определения рутер.</p>
+                                    </li>
+                                </ul>
+                                <br>
+                            </li>
+                            <li>
+                                <p><b>Сляпа връзка(Stub link)</b> - Това е мрежа, свързана с единствен рутер. Данните
+                                    влизат в мрежата
+                                    чрез единствения рутер и напускат мрежата чрез същия рутер.</p>
+                                <br>
+                            </li>
+                            <li>
+                                <p><b>Виртуална връзка(Virtual link)</b> - Ако връзката между два рутера се наруши,
+                                    администрацията създава
+                                    виртуален път между рутерите, който може да бъде и доста дълъг.</p>
+                                <br>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <br>
+                <div class="return-link-information">
+                    <a href="ospf-areas.html">Назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
