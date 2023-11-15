@@ -10,19 +10,22 @@ html {
     background-color: #eee2dc;
     text-align: justify;
 }
-.protocol-areas {
+.protocol-areas,
+.protocol-lll-areas {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.protocol-areas-info {
+.protocol-areas-info, 
+.protocol-lll-info {
     flex: 1;
     margin-right: 20px; 
     padding: 1em;
 }
 
-.protocol-areas-img img {
+.protocol-areas-img img,
+.protocol-lll-img img {
     max-width: 100%;
     height: auto;
     border-radius: 5%;

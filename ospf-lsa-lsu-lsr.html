@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSA-LSU-LSR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="section-background">
+        <div class="section-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">OSPF</a></li>
+                    <li><a href="information.html">Информация</a></li>
+                    <li><a href="advantages-disadvantages.html">Предимства и недостатъци</a></li>
+                    <li><a href="bibliography.html">Източници</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section-content">
+            <h1> OSPF - LSA, LSU, LSR</h1>
+            <div class="container">
+                <div class="protocol-lll-areas">
+                    <div class="protocol-lll-info">
+                        <p>
+                            OSPF рутерите използват <b>LSA (Link-State Advertisement)</b> за обмен на информация за
+                            топологията. Всяко LSA съдържа информация за маршрутизация и топология, описваща част от
+                            OSPF мрежата. Когато два съседа решат да обменят маршрути, те изпращат един на друг списък с
+                            всички LSA в техните съответни бази данни за топология. След това всеки рутер проверява
+                            своята база данни за топология и изпраща съобщение за <b>Link State Request (LSR)</b>,
+                            заявявайки
+                            всички LSA, които не се намират в неговата таблица за топология. Другият рутер отговаря със
+                            съобщение за <b>Link State Update (LSU)</b>, съдържащо всички LSA, които другият съсед е
+                            поискал.
+                        </p>
+                    </div>
+                    <div class="protocol-lll-img">
+                        <img src="https://study-ccna.com/wp-content/images/ospf_lsa_lsr_lsu.jpg" alt="">
+                    </div>
+                </div>
+                <p>След конфигурирането на OSPF на двете рутера, те обменят LSA (Link-State Advertisement), за да опишат
+                    своите бази данни за топология. Рутер R1 изпраща LSA заглавие за своята директно свързана мрежа
+                    10.0.1.0/24. Рутер R2 проверява своята база данни за топология и установява, че няма информация за
+                    тази мрежа. Рутер R2 след това изпраща съобщение за Link State Request, заявявайки допълнителна
+                    информация за тази мрежа. Рутер R1 отговаря с Link State Update, който съдържа информация за
+                    подмрежата 10.0.1.0/24, като следващ адрес за хоп, разход и други.</p>
+                <br><br>
+                <div class="return-link-information">
+                    <a href="information.html">Назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
