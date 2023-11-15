@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формат на OSPF съобщенията</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="section-background">
+        <div class="section-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">OSPF</a></li>
+                    <li><a href="information.html">Информация</a></li>
+                    <li><a href="advantages-disadvantages.html">Предимства и недостатъци</a></li>
+                    <li><a href="bibliography.html">Източници</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section-content">
+            <h1>Формат на OSPF съобщенията</h1>
+            <div class="container">
+                <div class="protocol-areas">
+                    <div class="protocol-areas-info">
+                        <ul>
+                            <li><b>Версия(Version):</b> Това е поле от 8 бита, което указва версията на протокола OSPF.
+                            </li>
+                            <li><b>Тип(Type):</b> Това е поле от 8 бита, което определя типа на OSPF пакета..</li>
+                            <li><b>Съобщение(Message):</b>Това е поле от 16 бита, което определя общата дължина на
+                                съобщението,
+                                включително заглавието. Следователно общата дължина е равна на сумата от дължината на
+                                съобщението и заглавието.</li>
+                            <li><b>Източник IP адрес(Source IP address):</b> Определя адреса, от който се изпращат
+                                пакетите. Това е IP
+                                адрес за изпращане на маршрутизация.</li>
+                            <li><b>Идентификация на област(Area identification):</b> Определя областта, в рамките на
+                                която се извършва
+                                маршрутизацията.
+                            </li>
+                            <li><b>Контролна сума:(Checksum):</b>Използва се за корекция на грешки и откриване на
+                                грешки.</li>
+                            <li><b>Тип на удостоверяване:(Authentication type):</b>Има два типа удостоверяване, т.е. 0 и
+                                1. Тук, 0 означава
+                                "няма", което указва, че няма налично удостоверяване, а 1 означава "pwd" (парола), което
+                                указва удостоверяване базирано на парола.</li>
+                            <li><b>Удостоверяване(Authentication):</b>Това е поле от 32 бита, което съдържа реалната
+                                стойност на данните за удостоверяване.</li>
+                        </ul>
+                    </div>
+                    <div class="protocol-areas-img">
+                        <img src="https://static.javatpoint.com/tutorial/computer-network/images/ospf-protocol2.png"
+                            alt="">
+                    </div>
+                </div>
+                <br>
+                <div class="return-link-information">
+                    <a href="ospf-areas.html">Назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
