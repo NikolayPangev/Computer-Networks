@@ -10,6 +10,23 @@ html {
     background-color: #eee2dc;
     text-align: justify;
 }
+.protocol-areas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.protocol-areas-info {
+    flex: 1;
+    margin-right: 20px; 
+    padding: 1em;
+}
+
+.protocol-areas-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
 
 .section-content .contact-container {
     border: 1px solid #000;
